@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+
+  /* Colors: */
+  --unnamed-color-ff6752: #FF6752;
+  --unnamed-color-4487ff: #4487FF;
+  --unnamed-color-f8f8f8: #F8F8F8;
+  --unnamed-color-00225c: #00225C;
+  --unnamed-color-808080: #808080;
+  --unnamed-color-fd6845: #FD6845;
+  --unnamed-color-b1bbcd: #B1BBCD;
+  --unnamed-color-fe6845: #FE6845;
+  --unnamed-color-7569de: #7569DE;
+  --unnamed-color-ffa046: #FFA046;
+  --unnamed-color-9ecb45: #9ECB45;
+  }
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('assets/fonts/Gibson-SemiBold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('assets/fonts/Segoe-UI.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'SegoeUI-bold';
+  src: url('assets/fonts/Segoe-UI-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'MuseoModerno';
+  src: url('assets/fonts/MuseoSansRounded-700.otf') format("opentype");
+}
+
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Comfortaa', cursive;
+}
+
+a,ul,li { text-decoration: none; list-style: none;}
+
+

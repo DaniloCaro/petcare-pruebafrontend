@@ -1,0 +1,78 @@
+.mainHero {
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 140px;
+}
+.mainHero__information{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainHero__img{
+  width: 50%;
+}
+.mainHero__information > h1 {
+  text-align: left;
+  font: normal normal normal 84px/100px MuseoModerno;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin: 0;
+}
+.mainHero__information > p {
+  text-align: left;
+  font: normal normal normal 24px/33px Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  max-width: 590px;
+}
+.information__btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+}
+.information__btn > button {
+  width: 239px;
+  height: 75px;
+  background: var(--unnamed-color-4487ff) 0% 0% no-repeat padding-box;
+  background: #4487FF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #2C1DAD29;
+  border-radius: 38px;
+  border: none;
+  opacity: 1;
+  color: var(--unnamed-color-f8f8f8);
+  font: normal normal bold 20px/27px Open Sans;
+  letter-spacing: 0px;
+  margin-right: 36px;
+}
+.information__btn > p {
+  color: var(--unnamed-color-f8f8f8);
+  text-align: left;
+  font: normal normal normal 20px/27px Open Sans;
+  letter-spacing: 0px;
+}
+.mainHero__img{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.circleYellow{
+  width:546px;
+  height:546px;
+  background: #ffe530;
+  border-radius: 50%;
+}
+.circleYellow > img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  object-position:0px 0px;
+  border-radius: 0% 0% 50% 50% / 0% 0% 39% 39%;
+  transform: translatey(-240px);
+}

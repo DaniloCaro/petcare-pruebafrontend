@@ -1,0 +1,30 @@
+.services-container {
+  width: 90%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around ;
+  padding: 0 5%;
+  margin: 300px auto 0 auto;
+}
+.services-left{
+  width: 45%;
+  height: 100%;
+}
+.cards {
+  width: 45%;
+  height: 100%;
+}
+.cards-grid {
+  width: 536px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 38px;
+  grid-template-areas:
+    "card1 card2"
+    "card3 card4";
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+}

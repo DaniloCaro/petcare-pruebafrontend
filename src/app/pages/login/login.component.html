@@ -1,0 +1,27 @@
+<main>
+  <div class="loginContainer">
+    <section class="orangeSection">
+      <div class="cicleBg">
+        <app-logo></app-logo>
+      </div>
+    </section>
+    <section class="whiteSection">
+      <div class="login">
+        <form [formGroup]="loginForm" class="login__form" errorTailor>
+          <h1 class="login__title">BIENVENIDO</h1>
+          <input id="email" formControlName="email" class="login__input" type="text" placeholder="EMAIL" minlength="6" required/>
+          <input formControlName="password" class="login__input" type="password" placeholder="CONTRASEÑA" required/>
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <button [disabled]="this.loginForm.invalid" class="btn" mat-raised-button color="primary" (click)="postUser()">
+            INICIAR SESIÓN
+            <!-- routerLink="home" -->
+          </button>
+          <p>AÚN NO TENGO CUENTA <a href="#">REGISTRARSE</a></p>
+        </form>
+        </div>
+    </section>
+    <div class="wave">
+      <div style="height: 100%; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M244.64,-4.42 C85.50,35.05 185.94,86.36 237.87,151.48 L0.00,150.00 L0.00,0.00 Z" style="stroke: none; fill: var(--unnamed-color-ff6752);"></path></svg></div>
+    </div>
+  </div>
+</main>

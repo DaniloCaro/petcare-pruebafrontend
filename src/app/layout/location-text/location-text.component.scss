@@ -1,0 +1,23 @@
+.services {
+  & > h2 {
+    color: var(--unnamed-color-ff6752);
+    font: normal normal bold 48px/64px Comfortaa;
+    letter-spacing: 0px;
+    margin-bottom: 39px;
+  }
+  & > p {
+    width: 400px;
+    color: var(--unnamed-color-808080);
+    text-align: left;
+    font: normal normal normal 24px/33px Open Sans;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+  }
+  & > h3 {
+    color: var(--unnamed-color-ff6752);
+    text-align: left;
+    font: normal normal bold 24px/32px SegoeUI;
+    letter-spacing: 0px;
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,28 @@
+.mainHome {
+  min-height: 100vh;;
+}
+.waveOne {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+.waveTwo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 1100px;
+  transform: rotate(180deg);
+  display: flex;
+  flex-direction: column;
+}
+.waveThree {
+  // width: 100%;
+  // height: 100%;
+  // position: absolute;
+  // z-index: -1;
+  // top: 1840px;
+  transform: rotate(180deg);
+}
