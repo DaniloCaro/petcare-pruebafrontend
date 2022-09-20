@@ -31,4 +31,12 @@
   letter-spacing: 0px;
   color: #FFFFFF;
   margin-left: 35px;
+  padding: 10px;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  &:hover{
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+    transition: ease-in-out 0.3s;
+  }
 }

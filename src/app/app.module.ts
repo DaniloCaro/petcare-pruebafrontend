@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { ErrorTailorModule } from '@ngneat/error-tailor';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { ToastrModule } from 'ngx-toastr';
 // Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -24,6 +25,7 @@ import { HowItWorksComponent } from './templates/how-it-works/how-it-works.compo
 import { OurServicesComponent } from './templates/our-services/our-services.component';
 import { AboutUsComponent } from './templates/about-us/about-us.component';
 import { FooterComponent } from './templates/footer/footer.component';
+import { OwnersPetsComponent } from './templates/owners-pets/owners-pets.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { FooterComponent } from './templates/footer/footer.component';
     HowItWorksComponent,
     OurServicesComponent,
     AboutUsComponent,
-    FooterComponent
+    FooterComponent,
+    OwnersPetsComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +53,7 @@ import { FooterComponent } from './templates/footer/footer.component';
     MatButtonModule,
     ReactiveFormsModule,
     HttpClientModule,
+    ToastrModule.forRoot(),
     ErrorTailorModule.forRoot({
       errors: {
         useValue: {

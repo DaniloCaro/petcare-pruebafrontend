@@ -1,5 +1,5 @@
 .mainHome {
-  min-height: 100vh;;
+  min-height: 100vh;
 }
 .waveOne {
   width: 100%;
@@ -17,12 +17,34 @@
   transform: rotate(180deg);
   display: flex;
   flex-direction: column;
+  border:none;
 }
 .waveThree {
-  // width: 100%;
-  // height: 100%;
-  // position: absolute;
-  // z-index: -1;
-  // top: 1840px;
+  border:none;
   transform: rotate(180deg);
+
+}
+.cicleYellow{
+  width:600px;
+  height: 1200px;
+  position: absolute;
+  top: 2700px;
+  right: 0;
+  border-radius: 1200px 0 0 1200px;
+  -moz-border-radius: 1200px 0 0 1200px;
+  -webkit-border-radius: 1200px 0 0 1200px;
+  background: #F9C80E;
+  z-index: -1;
+}
+.cicleYellowTwo{
+  width:150px;
+  height: 300px;
+  position: absolute;
+  top: 3700px;
+  left: 0;
+  border-radius: 0 300px 300px 0;
+  -moz-border-radius: 0 300px 300px 0;
+  -webkit-border-radius: 0 300px 300px 0;
+  background: #F9C80E;
+  z-index: -1;
 }

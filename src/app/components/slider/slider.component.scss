@@ -7,10 +7,16 @@
   height: 316px;
   overflow-x: hidden;
   align-items: center;
+  margin-top: 100px;
 }
 
+.plans-container--slider .carousel__item:nth-child(2n + 1) {
+  background-color: var(--unnamed-color-ff6752);
+}
+.plans-container--slider .carousel__item:nth-child(2) {
+  background-color: var(--unnamed-color-4487ff);
+}
 /* Carousel */
-
 .carousel__item {
   display: flex;
   justify-content: center;
@@ -19,8 +25,40 @@
   /* filter: drop-shadow(0 2px 2px #555); */
   will-change: transform, opacity;
   animation: carousel-animate-vertical 15s linear infinite;
-}
+  border-radius: 25px;
+  box-shadow: 0px 3px 6px #00000029;
 
+  & > .plans-container--card{
+    max-width: 696px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+  }
+}
+.plan-card--img{
+  width:108px;
+  height: 108px;
+  border-radius: 50%;
+  background-image: url("/assets/img/pet-mini.svg");
+  background-color:#ffdb26;
+  margin: 0 auto;
+}
+.plan-card--title{
+  color: var(--unnamed-color-f8f8f8);
+  text-align: center;
+  font: normal normal normal 24px Comfortaa;
+  letter-spacing: 0px;
+  margin: 20px 0;
+}
+.plan-card--saving {
+  color: var(--unnamed-color-f8f8f8);
+  text-align: center;
+  font: normal normal normal 18px Open Sans;
+  letter-spacing: 0px;
+}
 .carousel__item:nth-child(1) {
   animation-delay: calc(5s * -1);
 }
@@ -40,26 +78,31 @@ carousel-animate-vertical {
     transform: translateX(70%) scale(0.5);
     opacity: 0;
     visibility: hidden;
+    z-index: -1;
   }
   3%, 33.3333333333% {
     transform: translateX(70%) scale(0.7);
     opacity: 0.4;
     visibility: visible;
+    z-index: -1;
   }
   36.3333333333%, 66.6666666667% {
     transform: translateX(0) scale(1);
     opacity: 1;
     visibility: visible;
+    z-index: 1;
   }
   69.6666666667%, 100% {
     transform: translateX(-70%) scale(0.7);
     opacity: 0.4;
     visibility: visible;
+    z-index: -1;
   }
   103% {
     transform: translateX(-70%) scale(0.5);
     opacity: 0;
     visibility: visible;
+    z-index: -1;
   }
   /* 100% {
     transform: translateX(-100%) scale(0.5);
