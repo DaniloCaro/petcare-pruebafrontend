@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class UsersService {
 
   private myAppUrl : string = 'https://reqres.in/';
-  private myApiUrl : string = 'api/login/';
+  private myApiUrl : string = 'api/users/';
   private myApiUrlUser : string = 'api/register';
 
   constructor(private http: HttpClient) { }
