@@ -13,6 +13,7 @@ export class JwtInterceptorInterceptor implements HttpInterceptor {
   constructor() {}
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    return next.handle(request);
+    console.log('Pasó por el interceptor');//Solo ve la peticion y genera un console.log
+    return next.handle(request); //Pasa la petición al siguiente interceptor
   }
 }

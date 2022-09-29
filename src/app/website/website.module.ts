@@ -2,7 +2,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AuthModule } from '../auth/auth.module';
 import { CookieService } from 'ngx-cookie-service';
 import { WebsiteRoutingModule } from './website-routing.module';
@@ -19,12 +18,12 @@ import { OwnersPetsComponent } from './templates/owners-pets/owners-pets.compone
 import { HeroComponent } from './components/hero/hero.component';
 import { NavComponent } from './components/nav/nav.component';
 import { CardComponent } from './components/card/card.component';
+//Pages
 import { NotFoundComponent } from '../shared/pages/not-found/not-found.component';
 import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
-//    AppComponent,
     HomeComponent,
     NotFoundComponent,
     CardComponent,

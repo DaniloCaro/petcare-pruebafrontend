@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 // Services
-import { UsersService } from '../../../services/users.service';
+import { UsersService } from '../../services/users.service';
 
 @Component({
   selector: 'app-login',
@@ -33,20 +33,36 @@ export class LoginComponent implements OnInit {
   }
 
   postUser() {
-    this._usersService.postUser(this.loginForm.value)
-    .subscribe((data) => {
-      console.log(this.loginForm.value);
-      this.loader();
-      setTimeout(() => {
-      this.cookieService.set('token', data.token,1,'/');
-      this.router.navigate(['/home']);
-      }, 2000);
-    } , (error) => {
-      console.log(error);
-      this.toastr.error('Email o contraseña incorrecta!', 'Error al iniciar sesión',{
+    // this._usersService.postUser(this.loginForm.value).subscribe((data) => {
+    //     console.log(this.loginForm.value);
+
+    this._usersService.postUser(this.loginForm.value).subscribe({
+      next: (data) => {
+        console.log(this.loginForm.value);
+        this.loader();
+        setTimeout(() => {
+        this.cookieService.set('token', data.token,1,'/');//Guardamos la cookie
+        this.router.navigate(['/home']);
+        }, 2000);
+      },
+      error: (error) => {
+        console.log(error);
+        this.toastr.error('Email o contraseña incorrecta!', 'Error al iniciar sesión',{
         timeOut: 3000,
-      });
-    }
+        });
+      }
+      //   console.log(this.loginForm.value);
+      //   this.loader();
+      //   setTimeout(() => {
+      //   this.cookieService.set('token', data.token,1,'/');
+      //   this.router.navigate(['/home']);
+      //   }, 2000);
+      // } , (error) => {
+      //   console.log(error);
+      //   this.toastr.error('Email o contraseña incorrecta!', 'Error al iniciar sesión',{
+      //     timeOut: 3000,
+      //   });
+      }
     )
   }
 }

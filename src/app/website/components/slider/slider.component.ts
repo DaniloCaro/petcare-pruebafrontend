@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 // Service
-import { UsersService } from '../../../services/users.service';
+import { DatausersService } from '../../../website/services/datausers.service';
 
 @Component({
   selector: 'app-slider',
@@ -9,7 +9,7 @@ import { UsersService } from '../../../services/users.service';
 })
 export class SliderComponent implements OnInit {
 
-  constructor(private _userService:UsersService) { }
+  constructor(private _userService:DatausersService) { }
 
   @Input() cardImg: string='';
   @Input() cardTitle: string = '';
